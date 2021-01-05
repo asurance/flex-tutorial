@@ -1,40 +1,39 @@
-import Link from 'next/link'
+import React, { ReactNode } from 'react'
 import Head from 'next/head'
 
 type Props = {
-    children?: JSX.Element | JSX.Element[] | boolean | null | string | number
-    title?: string
+    children?: ReactNode;
+    title?: string;
 }
 
-const Layout = ({ children, title = 'This is the default title' }: Props): JSX.Element => (
-    <div>
+const Layout = ({
+    children,
+    title,
+}: Readonly<Props>): JSX.Element => {
+    return (<div>
         <Head>
-            <title>{title}</title>
+            <title>{title ? `${title} | X's Blog` : 'X\'s Blog'}</title>
             <meta charSet="utf-8" />
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <header>
-            <nav>
-                <Link href="/">
-                    <a>Home</a>
-                </Link>{' '}
-        |{' '}
-                <Link href="/about">
-                    <a>About</a>
-                </Link>{' '}
-        |{' '}
-                <Link href="/users">
-                    <a>Users List</a>
-                </Link>{' '}
-        | <a href="/api/users">Users API</a>
-            </nav>
+
         </header>
-        {children}
+        <main>
+            <section>
+
+            </section>
+            <section>
+                {children}
+            </section>
+            <section>
+
+            </section>
+        </main>
         <footer>
-            <hr />
-            <span>I&apos;m here to stay (Footer)</span>
+
         </footer>
-    </div>
-)
+    </div>)
+}
 
 export default Layout

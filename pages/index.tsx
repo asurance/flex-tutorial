@@ -1,15 +1,15 @@
 import Link from 'next/link'
 import Layout from '../components/Layout'
 
-const IndexPage = (): JSX.Element => (
-    <Layout title="Home | Next.js + TypeScript Example">
-        <h1>Hello Next.js 👋</h1>
+const HomePage = (): JSX.Element => (
+    <Layout title="主页">
+        <h1>X&apos;s blog</h1>
         <p>
-            <Link href="/about">
-                <a>About</a>
+            <Link href="blogs/flexTutorial">
+                flex
             </Link>
         </p>
     </Layout>
 )
 
-export default IndexPage
+export default HomePage
