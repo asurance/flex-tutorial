@@ -16,24 +16,10 @@ const Layout = ({
             <meta charSet="utf-8" />
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
-        <header>
-
-        </header>
         <main>
-            <section>
-
-            </section>
-            <section>
-                {children}
-            </section>
-            <section>
-
-            </section>
+            {children}
         </main>
-        <footer>
-
-        </footer>
-    </div>)
+    </div >)
 }
 
 export default Layout
