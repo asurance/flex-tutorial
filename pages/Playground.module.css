@@ -1,0 +1,17 @@
+#root {
+    flex: auto;
+    align-self: stretch;
+    display: flex;
+    align-items: stretch;
+}
+
+#container {
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inspector {
+    flex-basis: 200px;
+}
