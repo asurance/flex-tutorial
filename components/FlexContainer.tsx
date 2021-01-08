@@ -11,7 +11,10 @@ const FlexContainer = memo(function FlexContainer({
 }: Partial<Props>): ReactElement {
     return (<div
         style={{
+            display: 'flex',
             flexDirection,
+            border: '1px solid',
+            overflow: 'hidden',
         }}
     >{children}</div>)
 })

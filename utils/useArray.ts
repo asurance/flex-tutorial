@@ -1,6 +1,6 @@
 import { Reducer, useCallback, useReducer } from 'react'
 
-type Action<T> = AddAction<T> | RemoveAction<T> | UpdateAciton<T>
+type Action<T> = AddAction<T> | RemoveAction<T> | UpdateAction<T> | ClearAction
 
 type AddAction<T> = {
     type: 'Add',
@@ -12,9 +12,13 @@ type RemoveAction<T> = {
     data: T,
 }
 
-type UpdateAciton<T> = {
+type UpdateAction<T> = {
     type: 'Update',
     data: T,
+}
+
+type ClearAction = {
+    type: 'Clear',
 }
 
 export type UseArrayResult<T> = {
@@ -22,6 +26,7 @@ export type UseArrayResult<T> = {
     add(data: T): void;
     remove(data: T): void;
     update(data: T): void;
+    clear(): void;
 }
 
 function ArrayReducer<T>(state: T[], action: Action<T>): T[] {
@@ -44,6 +49,8 @@ function ArrayReducer<T>(state: T[], action: Action<T>): T[] {
                 return state
             }
         }
+        case 'Clear':
+            return []
         default:
             throw new Error('unknown array action type')
     }
@@ -61,10 +68,14 @@ export function useArray<T>(): UseArrayResult<T> {
     const update = useCallback((data: T) => {
         dispatch({ type: 'Update', data })
     }, [])
+    const clear = useCallback(() => {
+        dispatch({ type: 'Clear' })
+    }, [])
     return {
         state,
         add,
         remove,
         update,
+        clear,
     }
 }
