@@ -1,10 +1,9 @@
-import styles from './Layout.module.css'
+import layoutStyles from '../styles/Layout.module.css'
 
 import Head from 'next/head'
 import Link from 'next/link'
-
-import type { ReactElement, ReactNode } from 'react'
 import { useRouter } from 'next/router'
+import type { ReactElement, ReactNode } from 'react'
 
 type Props = {
     children?: ReactNode;
@@ -16,13 +15,13 @@ const Layout = ({
     title,
 }: Readonly<Props>): ReactElement => {
     const router = useRouter()
-    return (<div id={styles.layout}>
+    return (<div id={layoutStyles.layout}>
         <Head>
-            <title>{`${title ? `${title} | ` : ''}Flex布局教程`}</title>
+            <title>{`${title ? `${title} | ` : ''}Flex布局手册`}</title>
             <meta charSet="utf-8" />
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
-        <main id={styles.main}>
+        <main id={layoutStyles.main}>
             {children}
         </main>
         <footer>
