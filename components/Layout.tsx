@@ -3,7 +3,7 @@ import layoutStyles from '../styles/Layout.module.css'
 import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import type { ReactElement, ReactNode } from 'react'
+import { ReactElement, ReactNode } from 'react'
 
 type Props = {
     children?: ReactNode;

@@ -1,7 +1,7 @@
 import '../styles/global.css'
 
-import type { AppProps } from 'next/app'
-import type { ReactElement } from 'react'
+import { AppProps } from 'next/app'
+import { ReactElement } from 'react'
 
 const App = ({
     Component,

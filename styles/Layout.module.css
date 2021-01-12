@@ -9,6 +9,10 @@
     flex: auto;
 }
 
+#article {
+    margin: 0 12em;
+}
+
 #property-list {
-    flex: none;
+    flex: 0 0 20em;
 }

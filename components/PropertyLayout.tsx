@@ -1,8 +1,8 @@
 import layoutStyles from '../styles/Layout.module.css'
 
 import Link from 'next/link'
-import Layout from './Layout'
 import type { ReactElement, ReactNode } from 'react'
+import Layout from './Layout'
 
 type Props = {
     children?: ReactNode;
@@ -17,7 +17,7 @@ const PropertyLayout = ({
         <nav id={layoutStyles['property-list']} >
             <Link href="/properties/FlexDirection">flex-direciton</Link>
         </nav>
-        {children}
+        <article id={layoutStyles.article}>{children}</article>
     </Layout>
 }
 

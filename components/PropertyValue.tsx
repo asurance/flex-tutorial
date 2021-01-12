@@ -1,25 +1,19 @@
-import { ReactElement, ReactNode, useCallback } from 'react'
+import { ReactElement, ReactNode } from 'react'
 
-type Props<T> = {
+type Props<T extends string> = {
     value: T;
     isDefault?: boolean;
     children?: ReactNode;
-    onTakeEffect(value: T): void;
 }
 
-function PropertyValue<T>({
+function PropertyValue<T extends string>({
     value,
     isDefault,
     children,
-    onTakeEffect: takeEffect,
 }: Readonly<Props<T>>): ReactElement {
-    const onEffectClick = useCallback(() => {
-        takeEffect(value)
-    }, [value, takeEffect])
     return (
         <section>
-            <header><h1>{`${value}${isDefault ? '(默认值)' : ''}`}</h1></header>
-            <button onClick={onEffectClick}>生效</button>
+            <header><h1 id={value}>{`${value}${isDefault ? '(默认值)' : ''}`}</h1></header>
             {children}
         </section>
     )

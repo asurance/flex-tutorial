@@ -1,36 +1,57 @@
-import flexStyles from '../../styles/Flex.module.css'
-
-import { ReactElement, useCallback, useState } from 'react'
+import { ReactElement } from 'react'
+import Link from 'next/link'
 import PropertyLayout from '../../components/PropertyLayout'
 import PropertyValue from '../../components/PropertyValue'
-import Link from 'next/link'
+import FlexContainer from '../../components/FlexContainer'
+import FlexItem from '../../components/FlexItem'
+import { BlockAxis, BlockEnd, BlockStart, InlineAxis, InlineEnd, InlineStart, MainAxis, MainEnd, MainStart, WritingMode } from '../../components/LinkItem'
 
-const WritingMode = <Link href="https://www.w3.org/TR/css-writing-modes-4/#writing-mode">writing mode</Link>
+const Row = <Link href="/properties/FlexDirection#row">row</Link>
+const Column = <Link href="/properties/FlexDirection#column">column</Link>
 
 const FlexDirection = (): ReactElement => {
-    const [flexDirection, setFlexDirection] = useState<FlexDirection>('row')
-    const onChange = useCallback((value: FlexDirection) => {
-        setFlexDirection(value)
-    }, [])
     return <PropertyLayout title="flex-direciton">
-        <section>
-            <header><h1>flex-direction</h1></header>
-            <PropertyValue value="row" isDefault onTakeEffect={onChange} >
-                <p>容器的主轴和当前{WritingMode}的内联方向一致。主开始和主结束分别等效于当前{WritingMode}的内联开始和内联结束方向。</p>
-            </PropertyValue>
-            <PropertyValue value="row-reverse" onTakeEffect={onChange} >
-                <p>和<Link href="/properties/FlexDirection#row">row</Link>相似,只是主开始和主结束方向被交换了</p>
-            </PropertyValue>
-            <PropertyValue value="column" onTakeEffect={onChange} />
-            <PropertyValue value="column-reverse" onTakeEffect={onChange} />
-        </section>
-        <section style={{ width: 500 }}>
-            <div style={{ flexDirection }} className={flexStyles.container}>
-                <div className={flexStyles.item}>1</div>
-                <div className={flexStyles.item}>2</div>
-                <div className={flexStyles.item}>3</div>
-            </div>
-        </section>
+        <header><h1>flex-direction</h1></header>
+        <PropertyValue value="row" isDefault  >
+            <p>容器的{MainAxis}和当前{WritingMode}的{InlineAxis}方向一致。{MainStart}和{MainEnd}分别等效于当前{WritingMode}的{InlineStart}和{InlineEnd}方向。</p>
+            <section>
+                <FlexContainer>
+                    <FlexItem>1</FlexItem>
+                    <FlexItem>2</FlexItem>
+                    <FlexItem>3</FlexItem>
+                </FlexContainer>
+            </section>
+        </PropertyValue>
+        <PropertyValue value="row-reverse" >
+            <p>和{Row}相似,只是{MainStart}和{MainEnd}方向被交换了</p>
+            <section>
+                <FlexContainer style={{ flexDirection: 'row-reverse' }}>
+                    <FlexItem>1</FlexItem>
+                    <FlexItem>2</FlexItem>
+                    <FlexItem>3</FlexItem>
+                </FlexContainer>
+            </section>
+        </PropertyValue>
+        <PropertyValue value="column" >
+            <p>容器的{MainAxis}和当前{WritingMode}的{BlockAxis}方向一致。{MainStart}和{MainEnd}分别等效于当前{WritingMode}的{BlockStart}和{BlockEnd}方向。</p>
+            <section>
+                <FlexContainer style={{ flexDirection: 'column' }}>
+                    <FlexItem>1</FlexItem>
+                    <FlexItem>2</FlexItem>
+                    <FlexItem>3</FlexItem>
+                </FlexContainer>
+            </section>
+        </PropertyValue>
+        <PropertyValue value="column-reverse" >
+            <p>和{Column}相似,只是{MainStart}和{MainEnd}方向被交换了</p>
+            <section>
+                <FlexContainer style={{ flexDirection: 'column-reverse' }}>
+                    <FlexItem>1</FlexItem>
+                    <FlexItem>2</FlexItem>
+                    <FlexItem>3</FlexItem>
+                </FlexContainer>
+            </section>
+        </PropertyValue>
     </PropertyLayout>
 }
 
