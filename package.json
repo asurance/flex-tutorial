@@ -7,7 +7,10 @@
         "start": "next start",
         "type-check": "tsc",
         "export": "next export",
-        "release": "yarn run type-check && yarn run build && yarn run export"
+        "lint": "eslint pages/**",
+        "check": "yarn run type-check & yarn run lint",
+        "release": "yarn run check && yarn run build",
+        "build:pkg": "yarn run release && yarn run export"
     },
     "dependencies": {
         "next": "latest",
