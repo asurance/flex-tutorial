@@ -12,5 +12,5 @@ export default function StyledLink({
     href,
     children,
 }: Props): ReactElement {
-    return <Link href={href}><a target="_blank" className={styles.link}>{children}</a></Link>
+    return <Link href={href}><a target={href.startsWith('http') ? '_blank' : '_self'} className={styles.link}>{children}</a></Link>
 }
