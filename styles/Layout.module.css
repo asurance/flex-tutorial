@@ -10,9 +10,10 @@
 }
 
 #article {
-    margin: 0 12em;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 #property-list {
-    flex: 0 0 20em;
+    width: 320px
 }
