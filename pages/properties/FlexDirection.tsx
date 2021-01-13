@@ -1,13 +1,13 @@
 import { ReactElement } from 'react'
-import Link from 'next/link'
 import PropertyLayout from '../../components/PropertyLayout'
 import PropertyValue from '../../components/PropertyValue'
 import FlexContainer from '../../components/FlexContainer'
 import FlexItem from '../../components/FlexItem'
 import { BlockAxis, BlockEnd, BlockStart, InlineAxis, InlineEnd, InlineStart, MainAxis, MainEnd, MainStart, WritingMode } from '../../components/LinkItem'
+import StyledLink from '../../components/StyledLink'
 
-const Row = <Link href="/properties/FlexDirection#row">row</Link>
-const Column = <Link href="/properties/FlexDirection#column">column</Link>
+const Row = <StyledLink href="/properties/FlexDirection#row">row</StyledLink>
+const Column = <StyledLink href="/properties/FlexDirection#column">column</StyledLink>
 
 const FlexDirection = (): ReactElement => {
     return <PropertyLayout title="flex-direciton">
@@ -52,6 +52,7 @@ const FlexDirection = (): ReactElement => {
                 </FlexContainer>
             </section>
         </PropertyValue>
+        <StyledLink href="https://codepen.io/asurance/pen/RwGeBjL">codepen</StyledLink>
     </PropertyLayout>
 }
 
