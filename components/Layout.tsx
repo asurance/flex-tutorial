@@ -24,7 +24,7 @@ const Layout = ({
         <main id={layoutStyles.main}>
             {children}
         </main>
-        <footer>
+        <footer id={layoutStyles.footer}>
             {router.pathname === '/' ? null : <Link href="/">回到主页</Link>}
             <Link href="https://www.w3.org/TR/css-flexbox-1/">参考源</Link>
         </footer>
