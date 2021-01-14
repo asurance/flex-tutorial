@@ -12,6 +12,10 @@ const Column = <StyledLink href="/properties/FlexDirection#column">column</Style
 const FlexDirection = (): ReactElement => {
     return <PropertyLayout title="flex-direciton">
         <header><h1>flex-direction</h1></header>
+        <nav>
+            <StyledLink href="https://codepen.io/asurance/pen/RwGeBjL">codepen</StyledLink>
+            <StyledLink href="https://caniuse.com/?search=flex-direction">caniuse</StyledLink>
+        </nav>
         <PropertyValue value="row" isDefault  >
             <p>容器的{MainAxis}和当前{WritingMode}的{InlineAxis}方向一致。{MainStart}和{MainEnd}分别等效于当前{WritingMode}的{InlineStart}和{InlineEnd}方向。</p>
             <section>
@@ -52,7 +56,6 @@ const FlexDirection = (): ReactElement => {
                 </FlexContainer>
             </section>
         </PropertyValue>
-        <StyledLink href="https://codepen.io/asurance/pen/RwGeBjL">codepen</StyledLink>
     </PropertyLayout>
 }
 

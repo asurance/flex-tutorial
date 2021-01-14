@@ -1,0 +1,30 @@
+#nav {
+    flex: 0 0 9em;
+    overflow: hidden auto;
+}
+
+.ul {
+    list-style-type: none;
+    padding-left: 1em;
+}
+
+.link .select {
+    font-weight: bold;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link[href] {
+    color: dodgerblue;
+}
+
+.link[href]:focus, .link[href]:hover {
+    color: cyan;
+    background: gray;
+}
+
+.link[href]:active {
+    color: peachpuff;
+}

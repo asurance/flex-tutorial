@@ -13,7 +13,7 @@ function PropertyValue<T extends string>({
 }: Readonly<Props<T>>): ReactElement {
     return (
         <section>
-            <header><h1 id={value}>{`${value}${isDefault ? '(默认值)' : ''}`}</h1></header>
+            <header><h1 id={value} style={{ fontWeight: isDefault ? 'bold' : 'normal' }} >{`${value}${isDefault ? '(默认值)' : ''}`}</h1></header>
             {children}
         </section>
     )

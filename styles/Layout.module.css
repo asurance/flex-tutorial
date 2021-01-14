@@ -1,34 +1,22 @@
 #layout {
-    --header-height: 0em;
-    --footer--height: 6em;
-    --property-list-width: 12em;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 #footer {
-    position: fixed;
-    bottom: 0px;
-    height: var(--footer--height)
+    flex: none;
+    height: 3em
 }
 
 #main {
     flex: auto;
+    height: 0;
+    display: flex;
 }
 
 #article {
-    position: fixed;
-    top: var(--header-height);
-    left: var(--property-list-width);
-    right: 0em;
+    flex: auto;
     padding: 0 3em;
-    bottom: var(--footer--height);
-    overflow: hidden auto;
-}
-
-#property-list {
-    position: fixed;
-    top: var(--header-height);
-    left: 0px;
-    width: var(--property-list-width);
-    bottom: var(--footer--height);
     overflow: hidden auto;
 }
