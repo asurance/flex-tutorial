@@ -3,6 +3,7 @@ import navStyles from '../styles/Nav.module.css'
 import { ReactElement } from 'react'
 import { NavVO } from '../interfaces/NavVO'
 import NavLink from './NavLink'
+import { useRouter } from 'next/dist/client/router'
 
 type Props = {
     container: NavVO[]
@@ -11,13 +12,17 @@ type Props = {
 export default function PropertyNav({
     container,
 }: Readonly<Props>): ReactElement {
-    const navs = container.map(vo => <li key={vo.text}><NavLink href={vo.link}>{vo.text}</NavLink></li>)
+    const router = useRouter()
+    const containerNavs = container.map(vo => {
+        const href = `/properties/${vo.link}`
+        return <li key={vo.text}><NavLink href={href} current={router.pathname === href}>{vo.text}</NavLink></li>
+    })
     return (<nav id={navStyles.nav}>
         <ul className={navStyles.ul}>
             <li>
                 <NavLink href="/">container</NavLink>
                 <ul className={navStyles.ul}>
-                    {navs}
+                    {containerNavs}
                 </ul>
             </li>
         </ul>
