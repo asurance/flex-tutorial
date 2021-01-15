@@ -12,5 +12,5 @@ export default function HeaderLink({
     href,
     children,
 }: Readonly<Props>): ReactElement {
-    return <Link href={href}><a className={headerStyles.link}>{children}</a></Link>
+    return <Link href={href}><a target="_blank" className={headerStyles.link}>{children}</a></Link>
 }
