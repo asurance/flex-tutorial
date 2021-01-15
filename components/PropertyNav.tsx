@@ -14,13 +14,13 @@ export default function PropertyNav({
 }: Readonly<Props>): ReactElement {
     const router = useRouter()
     const containerNavs = container.map(vo => {
-        const href = `/properties/${vo.link}`
+        const href = `/container/${vo.link}`
         return <li key={vo.text}><NavLink href={href} current={router.pathname === href}>{vo.text}</NavLink></li>
     })
     return (<nav id={navStyles.nav}>
         <ul className={navStyles.ul}>
             <li>
-                <NavLink href="/">container</NavLink>
+                <NavLink href="/container" current={router.pathname === '/container'}>容器(container)</NavLink>
                 <ul className={navStyles.ul}>
                     {containerNavs}
                 </ul>
