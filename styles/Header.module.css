@@ -1,0 +1,20 @@
+.nav {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    color: dodgerblue;
+    margin: 0.5em;
+}
+
+.link:focus, .link:hover {
+    text-decoration: underline;
+}
+
+.link:active {
+    color: peachpuff;
+}

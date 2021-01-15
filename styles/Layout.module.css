@@ -4,14 +4,16 @@
     flex-direction: column;
 }
 
-@media print{
-    #header{
+@media print {
+    #header {
         display: none;
     }
 }
 
 #header {
     flex: none;
+    height: 40px;
+    border-bottom: 1px solid;
 }
 
 #main {
@@ -26,6 +28,6 @@
     overflow: hidden auto;
 }
 
-.p{
+.p {
     background: azure;
 }

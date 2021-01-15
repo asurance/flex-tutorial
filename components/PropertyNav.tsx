@@ -15,7 +15,7 @@ export default function PropertyNav({
     const router = useRouter()
     const containerNavs = container.map(vo => {
         const href = `/container/${vo.link}`
-        return <li key={vo.text}><NavLink href={href} current={router.pathname === href}>{vo.text}</NavLink></li>
+        return <li key={vo.link}><NavLink href={href} current={router.pathname === href}>{vo.text}</NavLink></li>
     })
     return (<nav id={navStyles.nav}>
         <ul className={navStyles.ul}>

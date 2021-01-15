@@ -1,10 +1,11 @@
 import layoutStyles from '../styles/Layout.module.css'
+import headerStyles from '../styles/Header.module.css'
 
 import type { ReactElement, ReactNode } from 'react'
 import PropertyNav from './PropertyNav'
 import { NavVO } from '../interfaces/NavVO'
 import Head from 'next/head'
-import Link from 'next/link'
+import HeaderLink from './HeaderLink'
 
 type Props = {
     children?: ReactNode;
@@ -31,8 +32,10 @@ const PropertyLayout = ({
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <header id={layoutStyles.header}>
-            {navs ? navs.map(vo => <Link key={vo.text} href={vo.link}>{vo.text}</Link>) : null}
-            <Link href="/">回到主页</Link>
+            <nav className={headerStyles.nav}>
+                {navs ? navs.map(vo => <HeaderLink key={vo.link} href={vo.link}>{vo.text}</HeaderLink>) : null}
+                <HeaderLink href="/">回到主页</HeaderLink>
+            </nav>
         </header>
         <main id={layoutStyles.main}>
             <PropertyNav container={containers} />
