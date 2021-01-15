@@ -4,17 +4,28 @@ import PropertyValue from '../../components/PropertyValue'
 import FlexContainer from '../../components/FlexContainer'
 import FlexItem from '../../components/FlexItem'
 import { BlockAxis, BlockEnd, BlockStart, InlineAxis, InlineEnd, InlineStart, MainAxis, MainEnd, MainStart, WritingMode } from '../../components/LinkItem'
-import StyledLink from '../../components/StyledLink'
+import ArticleLink from '../../components/ArticleLink'
+import { NavVO } from '../../interfaces/NavVO'
 
-const Row = <StyledLink href="/properties/FlexDirection#row">row</StyledLink>
-const Column = <StyledLink href="/properties/FlexDirection#column">column</StyledLink>
+const Row = <ArticleLink href="/properties/FlexDirection#row">row</ArticleLink>
+const Column = <ArticleLink href="/properties/FlexDirection#column">column</ArticleLink>
 
+const headNavs: NavVO[] = [
+    {
+        link: 'https://caniuse.com/?search=flex-direction',
+        text: 'caniuse'
+    },
+    {
+        link: 'https://codepen.io/asurance/pen/RwGeBjL',
+        text: 'codepen'
+    },
+]
 const FlexDirection = (): ReactElement => {
-    return <PropertyLayout title="flex-direciton">
+    return <PropertyLayout title="flex-direciton" navs={headNavs}>
         <header><h1>flex-direction</h1></header>
         <nav>
-            <StyledLink href="https://codepen.io/asurance/pen/RwGeBjL">codepen</StyledLink>
-            <StyledLink href="https://caniuse.com/?search=flex-direction">caniuse</StyledLink>
+            <ArticleLink href="https://codepen.io/asurance/pen/RwGeBjL">codepen</ArticleLink>
+            <ArticleLink href="https://caniuse.com/?search=flex-direction">caniuse</ArticleLink>
         </nav>
         <PropertyValue value="row" isDefault  >
             <p>容器的{MainAxis}和当前{WritingMode}的{InlineAxis}方向一致。{MainStart}和{MainEnd}分别等效于当前{WritingMode}的{InlineStart}和{InlineEnd}方向。</p>

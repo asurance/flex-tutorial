@@ -4,9 +4,8 @@
     flex-direction: column;
 }
 
-#footer {
+#header {
     flex: none;
-    height: 3em
 }
 
 #main {

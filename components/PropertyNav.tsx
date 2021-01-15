@@ -11,7 +11,7 @@ type Props = {
 export default function PropertyNav({
     container,
 }: Readonly<Props>): ReactElement {
-    const navs = container.map(vo => <li key={vo.link}><NavLink href={`/properties/${vo.link}`}>{vo.text}</NavLink></li>)
+    const navs = container.map(vo => <li key={vo.text}><NavLink href={vo.link}>{vo.text}</NavLink></li>)
     return (<nav id={navStyles.nav}>
         <ul className={navStyles.ul}>
             <li>
