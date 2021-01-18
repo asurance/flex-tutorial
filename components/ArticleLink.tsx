@@ -1,7 +1,7 @@
-import styles from '../styles/Link.module.css'
+import linkStyles from '../styles/Link.module.css'
 
-import Link from 'next/link'
 import { ReactElement, ReactNode } from 'react'
+import StyledLink from './StyledLink'
 
 type Props = {
     href: string;
@@ -9,10 +9,6 @@ type Props = {
     children?: ReactNode;
 }
 
-export default function ArticleLink({
-    href,
-    keep,
-    children,
-}: Props): ReactElement {
-    return <Link href={href}><a target={keep ? '_self' : '_blank'} className={styles.link}>{children}</a></Link>
+export default function ArticleLink(props: Props): ReactElement {
+    return <StyledLink {...props} className={linkStyles.link}></StyledLink>
 }

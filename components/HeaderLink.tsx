@@ -1,7 +1,7 @@
 import headerStyles from '../styles/Header.module.css'
 
-import Link from 'next/link'
 import { ReactElement, ReactNode } from 'react'
+import StyledLink from './StyledLink'
 
 type Props = {
     href: string;
@@ -9,10 +9,6 @@ type Props = {
     keep?: boolean;
 }
 
-export default function HeaderLink({
-    href,
-    children,
-    keep,
-}: Readonly<Props>): ReactElement {
-    return <Link href={href}><a target={keep ? '_self' : '_blank'} className={headerStyles.link}>{children}</a></Link>
+export default function HeaderLink(props: Readonly<Props>): ReactElement {
+    return <StyledLink {...props} className={headerStyles.link}></StyledLink>
 }
