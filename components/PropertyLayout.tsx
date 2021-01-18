@@ -1,7 +1,8 @@
 import layoutStyles from '../styles/Layout.module.css'
 import headerStyles from '../styles/Header.module.css'
+import navStyles from '../styles/Nav.module.css'
 
-import type { ReactElement, ReactNode } from 'react'
+import { ReactElement, ReactNode, useCallback, useState } from 'react'
 import PropertyNav from './PropertyNav'
 import { NavVO } from '../interfaces/NavVO'
 import Head from 'next/head'
@@ -25,6 +26,11 @@ const PropertyLayout = ({
     title,
     navs,
 }: Readonly<Props>): ReactElement => {
+    const [navOpen, setNavOpen] = useState(false)
+    const onClickNavBtn = useCallback(() => {
+        setNavOpen(!navOpen)
+    }, [navOpen])
+
     return (<div id={layoutStyles.layout}>
         <Head>
             <title>{`${title ? `${title} | ` : ''}Flex布局手册`}</title>
@@ -38,8 +44,9 @@ const PropertyLayout = ({
             </nav>
         </header>
         <main id={layoutStyles.main}>
-            <PropertyNav container={containers} />
-            <article id={layoutStyles.article}>{children}</article>
+            <PropertyNav container={containers} show={navOpen} />
+            <article id={layoutStyles.article} style={{ display: navOpen ? 'none' : '' }}>{children}</article>
+            <button id={navStyles.navBtn} onClick={onClickNavBtn}>{navOpen ? '←' : '→'}</button>
         </main>
     </div >)
 }

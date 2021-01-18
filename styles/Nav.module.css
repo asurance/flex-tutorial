@@ -2,11 +2,31 @@
     #nav {
         display: none
     }
+    #nav.show {
+        display: initial;
+        flex: 0 0 100vw;
+    }
 }
 
 #nav {
     flex: 0 0 9em;
     overflow: hidden auto;
+}
+
+#navBtn {
+    display: none;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    border: none;
+    border-top-right-radius: 999px;
+    outline: none;
+}
+
+@media screen and (max-width:480px) {
+    #navBtn {
+        display: initial;
+    }
 }
 
 .ul {
