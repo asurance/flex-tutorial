@@ -14,11 +14,15 @@ const Column = <ArticleLink href="/container/FlexDirection#column" keep>column</
 const headNavs: NavVO[] = [
     {
         link: 'https://caniuse.com/?search=flex-direction',
-        text: 'caniuse'
+        text: 'Caniuse'
     },
     {
         link: 'https://codepen.io/asurance/pen/RwGeBjL',
-        text: 'codepen'
+        text: 'Codepen'
+    },
+    {
+        link: 'https://www.w3.org/TR/css-flexbox-1/#propdef-flex-direction',
+        text: 'Reference',
     },
 ]
 const FlexDirection = (): ReactElement => {

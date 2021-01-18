@@ -43,8 +43,8 @@ const Layout = ({
         <header id={layoutStyles.header}>
             <nav className={headerStyles.nav}>
                 {navs ? navs.map(vo => <HeaderLink key={vo.link} href={vo.link}>{vo.text}</HeaderLink>) : null}
-                {router.pathname === '/' ? null : <HeaderLink href="/" keep>回到主页</HeaderLink>}
-                <HeaderLink href="https://github.com/asurance/flex-tutorial/issues">上报bug</HeaderLink>
+                {router.pathname === '/' ? null : <HeaderLink href="/" keep>Home</HeaderLink>}
+                <HeaderLink href="https://github.com/asurance/flex-tutorial/issues">Report Bug</HeaderLink>
             </nav>
         </header>
         <main id={layoutStyles.main}>
