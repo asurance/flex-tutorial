@@ -40,7 +40,8 @@ const PropertyLayout = ({
         <header id={layoutStyles.header}>
             <nav className={headerStyles.nav}>
                 {navs ? navs.map(vo => <HeaderLink key={vo.link} href={vo.link}>{vo.text}</HeaderLink>) : null}
-                <HeaderLink href="/">回到主页</HeaderLink>
+                <HeaderLink href="/" keep>回到主页</HeaderLink>
+                <HeaderLink href="https://github.com/asurance/flex-tutorial/issues">上报bug</HeaderLink>
             </nav>
         </header>
         <main id={layoutStyles.main}>

@@ -6,11 +6,13 @@ import { ReactElement, ReactNode } from 'react'
 type Props = {
     href: string;
     children?: ReactNode;
+    keep?: boolean;
 }
 
 export default function HeaderLink({
     href,
     children,
+    keep,
 }: Readonly<Props>): ReactElement {
-    return <Link href={href}><a target="_blank" className={headerStyles.link}>{children}</a></Link>
+    return <Link href={href}><a target={keep ? '_self' : '_blank'} className={headerStyles.link}>{children}</a></Link>
 }
