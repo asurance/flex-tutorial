@@ -19,6 +19,10 @@ const containers: NavVO[] = [
     {
         link: 'FlexDirection',
         text: 'flex-direction',
+    },
+    {
+        link: 'FlexWrap',
+        text: 'flex-wrap',
     }
 ]
 
