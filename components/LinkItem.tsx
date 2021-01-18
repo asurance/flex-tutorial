@@ -19,3 +19,5 @@ export const MainAxis = '主轴(main axis)'
 export const MainStart = '主开始(main start)'
 
 export const MainEnd = '主结束(main end)'
+
+export const FlexContainer = <ArticleLink href="/container" keep>flex容器(flex container)</ArticleLink>
