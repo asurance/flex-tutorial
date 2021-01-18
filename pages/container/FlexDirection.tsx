@@ -1,5 +1,5 @@
 import { ReactElement } from 'react'
-import PropertyLayout from '../../components/PropertyLayout'
+import Layout from '../../components/Layout'
 import PropertyValue from '../../components/PropertyValue'
 import FlexContainer from '../../components/FlexContainer'
 import FlexItem from '../../components/FlexItem'
@@ -22,7 +22,7 @@ const headNavs: NavVO[] = [
     },
 ]
 const FlexDirection = (): ReactElement => {
-    return <PropertyLayout title="flex-direciton" navs={headNavs}>
+    return <Layout title="flex-direciton" navs={headNavs}>
         <header><h1>flex-direction</h1></header>
         <PropertyValue value="row" isDefault  >
             <PropertyP>容器的{MainAxis}和当前{WritingMode}的{InlineAxis}方向一致。{MainStart}和{MainEnd}分别等效于当前{WritingMode}的{InlineStart}和{InlineEnd}方向。</PropertyP>
@@ -64,7 +64,7 @@ const FlexDirection = (): ReactElement => {
                 </FlexContainer>
             </section>
         </PropertyValue>
-    </PropertyLayout>
+    </Layout>
 }
 
 export default FlexDirection

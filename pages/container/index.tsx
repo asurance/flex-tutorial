@@ -1,8 +1,8 @@
 import { ReactElement } from 'react'
-import PropertyLayout from '../../components/PropertyLayout'
+import Layout from '../../components/Layout'
 
 export default function Container(): ReactElement {
-    return <PropertyLayout>
+    return <Layout>
         <header><h1>Container</h1></header>
-    </PropertyLayout>
+    </Layout>
 }
