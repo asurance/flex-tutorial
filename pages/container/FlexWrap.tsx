@@ -16,6 +16,10 @@ const headNavs: NavVO[] = [
         text: 'Caniuse'
     },
     {
+        link: 'https://codepen.io/asurance/pen/oNzmrrX',
+        text: 'Codepen'
+    },
+    {
         link: 'https://www.w3.org/TR/css-flexbox-1/#propdef-flex-wrap',
         text: 'Reference',
     },
