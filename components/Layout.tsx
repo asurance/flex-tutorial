@@ -23,6 +23,10 @@ const containers: NavVO[] = [
     {
         link: 'FlexWrap',
         text: 'flex-wrap',
+    },
+    {
+        link: 'JustifyContent',
+        text: 'justify-content',
     }
 ]
 

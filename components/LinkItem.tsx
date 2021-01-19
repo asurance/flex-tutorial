@@ -27,3 +27,5 @@ export const CrossStart = '交叉开始(cross start)'
 export const CrossEnd = '交叉结束(cross end)'
 
 export const Container = <ArticleLink href="/container" keep>flex容器(flex container)</ArticleLink>
+
+export const Item = 'flex项(flex item)'
