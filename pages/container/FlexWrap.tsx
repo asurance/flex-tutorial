@@ -8,7 +8,7 @@ import ArticleLink from '../../components/ArticleLink'
 import { NavVO } from '../../interfaces/NavVO'
 import PropertyP from '../../components/PropertyP'
 
-const Wrap = <ArticleLink href="/container/FlexWrap#wrap">wrap</ArticleLink>
+const Wrap = <ArticleLink href="/container/FlexWrap#wrap" keep>wrap</ArticleLink>
 
 const headNavs: NavVO[] = [
     {
