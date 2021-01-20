@@ -3,19 +3,23 @@ import Layout from '../../components/Layout'
 import PropertyValue from '../../components/PropertyValue'
 import FlexContainer from '../../components/FlexContainer'
 import FlexItem from '../../components/FlexItem'
-import { BlockAxis, BlockEnd, BlockStart, InlineAxis, InlineEnd, InlineStart, Item, MainAxis, MainEnd, MainStart, WritingMode } from '../../components/LinkItem'
+import { Item, MainEnd, MainStart } from '../../components/LinkItem'
 import { NavVO } from '../../interfaces/NavVO'
 import PropertyP from '../../components/PropertyP'
+import ArticleLink from '../../components/ArticleLink'
+
+const FlexStart = <ArticleLink href="/container/JustifyContent#flex-start" keep>flex-start</ArticleLink>
+const Center = <ArticleLink href="/container/JustifyContent#center" keep>center</ArticleLink>
 
 const headNavs: NavVO[] = [
     {
         link: 'https://caniuse.com/?search=justify-content',
         text: 'Caniuse'
     },
-    // {
-    //     link: 'https://codepen.io/asurance/pen/RwGeBjL',
-    //     text: 'Codepen'
-    // },
+    {
+        link: 'https://codepen.io/asurance/pen/bGwZvow',
+        text: 'Codepen'
+    },
     {
         link: 'https://www.w3.org/TR/css-flexbox-1/#propdef-justify-content',
         text: 'Reference',
@@ -46,7 +50,7 @@ export default function JustifyContent(): ReactElement {
             </section>
         </PropertyValue>
         <PropertyValue value="center" >
-            <PropertyP>容器的{MainAxis}和当前{WritingMode}的{InlineAxis}方向一致。{MainStart}和{MainEnd}分别等效于当前{WritingMode}的{InlineStart}和{InlineEnd}方向。</PropertyP>
+            <PropertyP>{Item}被放在行中心。行上的的{Item}彼此紧邻,并与行的中心对齐。行的{MainStart}与行中第一个{Item}之间和行的{MainEnd}与行中最后一个{Item}之间有相同大小的空间。(如何剩余的可用空间为负,{Item}也会溢出相同的空间。)</PropertyP>
             <section>
                 <FlexContainer style={{ justifyContent: 'center' }}>
                     <FlexItem>1</FlexItem>
@@ -56,7 +60,7 @@ export default function JustifyContent(): ReactElement {
             </section>
         </PropertyValue>
         <PropertyValue value="space-between" >
-            <PropertyP>容器的{MainAxis}和当前{WritingMode}的{InlineAxis}方向一致。{MainStart}和{MainEnd}分别等效于当前{WritingMode}的{InlineStart}和{InlineEnd}方向。</PropertyP>
+            <PropertyP>{Item}被均匀的分布在一条线上。如果剩余可用的空间为负,或是行中只有一个{Item},该值效果和{FlexStart}一致。否则,行中的第一个{Item}的{MainStart}和行的{MainStart}对齐,最后一个{Item}的{MainEnd}和行的{MainEnd}对齐,剩余的{Item}会被分布成任意两个相邻之间间距相同。</PropertyP>
             <section>
                 <FlexContainer style={{ justifyContent: 'space-between' }}>
                     <FlexItem>1</FlexItem>
@@ -66,7 +70,7 @@ export default function JustifyContent(): ReactElement {
             </section>
         </PropertyValue>
         <PropertyValue value="space-around" >
-            <PropertyP>容器的{MainAxis}和当前{WritingMode}的{InlineAxis}方向一致。{MainStart}和{MainEnd}分别等效于当前{WritingMode}的{InlineStart}和{InlineEnd}方向。</PropertyP>
+            <PropertyP>{Item}被均匀的分布在一条线上,并且两侧有一般大小的空间。如果剩余的可用空间为负数,或者行中只有一个{Item},该值效果和{Center}一致。否则,该行上的{Item}分布会使得任意相邻两个之间间距相同,并且第一个/最后一个{Item}到容器两边的间距是相邻间距的一半。</PropertyP>
             <section>
                 <FlexContainer style={{ justifyContent: 'space-around' }}>
                     <FlexItem>1</FlexItem>
