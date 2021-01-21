@@ -18,3 +18,9 @@
 .link:active {
     color: peachpuff;
 }
+
+@media screen and (max-width:480px) {
+    .link {
+        font-size: 12px;
+    }
+}
