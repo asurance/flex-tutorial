@@ -27,6 +27,9 @@ const headNavs: NavVO[] = [
 const FlexDirection = (): ReactElement => {
     return <Layout title="flex-wrap" navs={headNavs}>
         <header><h1>flex-wrap</h1></header>
+        <section>
+            <PropertyP>该属性用来控制{Container}是单行还是多行以及{CrossAxis}的方向,即新行的堆叠方向。</PropertyP>
+        </section>
         <PropertyValue value="nowrap" isDefault >
             <PropertyP>{Container}是单行容器。</PropertyP>
             <section>

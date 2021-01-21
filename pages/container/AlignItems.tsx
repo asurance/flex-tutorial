@@ -3,9 +3,12 @@ import Layout from '../../components/Layout'
 import PropertyValue from '../../components/PropertyValue'
 import FlexContainer from '../../components/FlexContainer'
 import FlexItem from '../../components/FlexItem'
-import { CrossAxis, CrossEnd, CrossStart, Item, MaxHeight, MaxWidth, MinHeight, MinWidth } from '../../components/LinkItem'
+import { Container, CrossAxis, CrossEnd, CrossStart, Item, MaxHeight, MaxWidth, MinHeight, MinWidth } from '../../components/LinkItem'
 import { NavVO } from '../../interfaces/NavVO'
 import PropertyP from '../../components/PropertyP'
+import ArticleLink from '../../components/ArticleLink'
+
+const JustifyContent = <ArticleLink href="/container/JustifyContent">justify-content</ArticleLink>
 
 const headNavs: NavVO[] = [
     {
@@ -25,6 +28,9 @@ const headNavs: NavVO[] = [
 export default function AlignItems(): ReactElement {
     return <Layout title="align-items" navs={headNavs}>
         <header><h1>align-items</h1></header>
+        <section>
+            <PropertyP>该属性沿着{Container}当前行的{CrossAxis}来对齐{Item}。功能上类似与{JustifyContent},但是是在垂直方向上的。</PropertyP>
+        </section>
         <PropertyValue value="stretch" isDefault>
             <PropertyP>如果{Item}的交叉大小和{CrossAxis}的两侧都不是计算为&apos;auto&apos;,那{Item}会被拉伸。它所使用的值会是使{Item}的交叉大小应可能与行的一致,同时又满足的{MinHeight}/{MinWidth}/{MaxHeight}/{MaxWidth}约束。</PropertyP>
             <section>

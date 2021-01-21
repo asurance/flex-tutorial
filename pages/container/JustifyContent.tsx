@@ -3,7 +3,7 @@ import Layout from '../../components/Layout'
 import PropertyValue from '../../components/PropertyValue'
 import FlexContainer from '../../components/FlexContainer'
 import FlexItem from '../../components/FlexItem'
-import { Item, MainEnd, MainStart } from '../../components/LinkItem'
+import { Container, Item, MainAxis, MainEnd, MainStart } from '../../components/LinkItem'
 import { NavVO } from '../../interfaces/NavVO'
 import PropertyP from '../../components/PropertyP'
 import ArticleLink from '../../components/ArticleLink'
@@ -29,6 +29,9 @@ const headNavs: NavVO[] = [
 export default function JustifyContent(): ReactElement {
     return <Layout title="justify-content" navs={headNavs}>
         <header><h1>justify-content</h1></header>
+        <section>
+            <PropertyP>该属性沿着{Container}当前行的{MainAxis}来对齐{Item}。这是在任何弹性长度和自动边距计算后完成的。通常而言,当一行中的所有{Item}都没弹性或是已经到其最大大小的时候,该属性可以帮助分配剩余的可用空间。当总长超出行时,也可以对项目的对齐方式进行一些控制。</PropertyP>
+        </section>
         <PropertyValue value="flex-start" isDefault >
             <PropertyP>{Item}被放在行首。行上第一个{Item}的{MainStart}边和行的{MainStart}对齐,之后的每个{Item}的则分别与前一个对齐。</PropertyP>
             <section>

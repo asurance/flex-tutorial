@@ -3,7 +3,7 @@ import Layout from '../../components/Layout'
 import PropertyValue from '../../components/PropertyValue'
 import FlexContainer from '../../components/FlexContainer'
 import FlexItem from '../../components/FlexItem'
-import { BlockAxis, BlockEnd, BlockStart, InlineAxis, InlineEnd, InlineStart, MainAxis, MainEnd, MainStart, WritingMode } from '../../components/LinkItem'
+import { BlockAxis, BlockEnd, BlockStart, Container, InlineAxis, InlineEnd, InlineStart, Item, MainAxis, MainEnd, MainStart, WritingMode } from '../../components/LinkItem'
 import ArticleLink from '../../components/ArticleLink'
 import { NavVO } from '../../interfaces/NavVO'
 import PropertyP from '../../components/PropertyP'
@@ -28,6 +28,9 @@ const headNavs: NavVO[] = [
 const FlexDirection = (): ReactElement => {
     return <Layout title="flex-direciton" navs={headNavs}>
         <header><h1>flex-direction</h1></header>
+        <section>
+            <PropertyP>该属性是通过设置{Container}的{MainAxis}来表明{Item}被排布的方向。</PropertyP>
+        </section>
         <PropertyValue value="row" isDefault >
             <PropertyP>容器的{MainAxis}和当前{WritingMode}的{InlineAxis}方向一致。{MainStart}和{MainEnd}分别等效于当前{WritingMode}的{InlineStart}和{InlineEnd}方向。</PropertyP>
             <section>
