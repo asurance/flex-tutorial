@@ -32,6 +32,10 @@ const containers: NavVO[] = [
         link: 'AlignItems',
         text: 'align-items',
     },
+    {
+        link: 'FlexFlow',
+        text: 'flex-flow',
+    },
 ]
 
 const Layout = ({
