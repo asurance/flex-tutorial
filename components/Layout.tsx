@@ -27,7 +27,11 @@ const containers: NavVO[] = [
     {
         link: 'JustifyContent',
         text: 'justify-content',
-    }
+    },
+    {
+        link: 'AlignItems',
+        text: 'align-items',
+    },
 ]
 
 const Layout = ({

@@ -29,3 +29,11 @@ export const CrossEnd = '交叉结束(cross end)'
 export const Container = <ArticleLink href="/container" keep>flex容器(flex container)</ArticleLink>
 
 export const Item = 'flex项(flex item)'
+
+export const MinHeight = <ArticleLink href="https://www.w3.org/TR/CSS21/visudet.html#propdef-min-height">min-height</ArticleLink>
+
+export const MinWidth = <ArticleLink href="https://www.w3.org/TR/CSS21/visudet.html#propdef-min-width">min-width</ArticleLink>
+
+export const MaxHeight = <ArticleLink href="https://www.w3.org/TR/CSS21/visudet.html#propdef-max-height">max-height</ArticleLink>
+
+export const MaxWidth = <ArticleLink href="https://www.w3.org/TR/CSS21/visudet.html#propdef-max-width">max-width</ArticleLink>
