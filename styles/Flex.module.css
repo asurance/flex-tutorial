@@ -19,3 +19,16 @@
     margin: auto;
     max-width: 400px;
 }
+
+.align-items-container{
+    height: 150px;
+}
+
+.align-items-item{
+    height: auto;
+}
+
+.align-items-special-item{
+    line-height: 120px;
+    font-size: 60px;
+}
