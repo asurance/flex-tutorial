@@ -47,6 +47,10 @@ const containers: NavVO[] = [
 ]
 
 const items: NavVO[] = [
+    {
+        link: 'AlignSelf',
+        text: 'align-self',
+    },
 ]
 
 const Layout = ({
