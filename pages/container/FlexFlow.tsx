@@ -4,9 +4,9 @@ import Layout from '../../components/Layout'
 import PropertyP from '../../components/PropertyP'
 import { NavVO } from '../../interfaces/NavVO'
 
-const FlexDirection = <ArticleLink href="/container/FlexDirection">flex-direction</ArticleLink>
+const FlexDirection = <ArticleLink href="/container/FlexDirection" keep>flex-direction</ArticleLink>
 
-const FlexWrap = <ArticleLink href="/container/FlexWrap">flex-wrap</ArticleLink>
+const FlexWrap = <ArticleLink href="/container/FlexWrap" keep>flex-wrap</ArticleLink>
 
 const headNavs: NavVO[] = [
     {
