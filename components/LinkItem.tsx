@@ -28,7 +28,7 @@ export const CrossEnd = '交叉结束(cross end)'
 
 export const Container = <ArticleLink href="/container" keep>flex容器(flex container)</ArticleLink>
 
-export const Item = 'flex项(flex item)'
+export const Item = <ArticleLink href="/item" keep>flex项(flex item)</ArticleLink>
 
 export const MinHeight = <ArticleLink href="https://www.w3.org/TR/CSS21/visudet.html#propdef-min-height">min-height</ArticleLink>
 

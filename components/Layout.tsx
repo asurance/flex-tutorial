@@ -46,6 +46,9 @@ const containers: NavVO[] = [
     },
 ]
 
+const items: NavVO[] = [
+]
+
 const Layout = ({
     children,
     title,
@@ -72,7 +75,7 @@ const Layout = ({
             </nav>
         </header>
         <main id={layoutStyles.main}>
-            <PropertyNav container={containers} show={navOpen} />
+            <PropertyNav container={containers} item={items} show={navOpen} />
             <article id={layoutStyles.article} style={{ display: navOpen ? 'none' : '' }}>{children}</article>
             <button id={navStyles.navBtn} onClick={onClickNavBtn}>{navOpen ? '←' : '→'}</button>
         </main>
