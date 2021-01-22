@@ -10,7 +10,7 @@ const FlexWrap = <ArticleLink href="/container/FlexWrap">flex-wrap</ArticleLink>
 
 const headNavs: NavVO[] = [
     {
-        link: 'https://caniuse.com/?search=flex-flow',
+        link: 'https://caniuse.com/?search=CSS%20property%3A%20flex-flow',
         text: 'Caniuse'
     },
     {

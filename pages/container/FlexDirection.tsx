@@ -13,7 +13,7 @@ const Column = <ArticleLink href="/container/FlexDirection#column" keep>column</
 
 const headNavs: NavVO[] = [
     {
-        link: 'https://caniuse.com/?search=flex-direction',
+        link: 'https://caniuse.com/?search=CSS%20property%3A%20flex-direction',
         text: 'Caniuse'
     },
     {

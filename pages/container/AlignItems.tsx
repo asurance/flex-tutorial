@@ -12,7 +12,7 @@ const JustifyContent = <ArticleLink href="/container/JustifyContent">justify-con
 
 const headNavs: NavVO[] = [
     {
-        link: 'https://caniuse.com/?search=align-items',
+        link: 'https://caniuse.com/?search=CSS%20property%3A%20align-items%3A%20Supported%20in%20Flex%20Layout',
         text: 'Caniuse'
     },
     {

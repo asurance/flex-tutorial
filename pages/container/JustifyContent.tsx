@@ -13,7 +13,7 @@ const Center = <ArticleLink href="/container/JustifyContent#center" keep>center<
 
 const headNavs: NavVO[] = [
     {
-        link: 'https://caniuse.com/?search=justify-content',
+        link: 'https://caniuse.com/?search=CSS%20property%3A%20justify-content%3A%20Supported%20in%20Flex%20Layout',
         text: 'Caniuse'
     },
     {
