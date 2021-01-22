@@ -41,3 +41,5 @@ export const MaxWidth = <ArticleLink href="https://www.w3.org/TR/CSS21/visudet.h
 export const BlockLevel = <ArticleLink href="https://www.w3.org/TR/css-display-3/#block-level">块级(block-level)</ArticleLink>
 
 export const InlineLevel = <ArticleLink href="https://www.w3.org/TR/css-display-3/#inline-level">内联级(inline-level)</ArticleLink>
+
+export const Integer = <ArticleLink href="https://www.w3.org/TR/css3-values/#integers">&lt;integer&gt;</ArticleLink>
