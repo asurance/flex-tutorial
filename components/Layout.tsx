@@ -40,6 +40,10 @@ const containers: NavVO[] = [
         link: 'Display',
         text: 'display',
     },
+    {
+        link: 'AlignContent',
+        text: 'align-content',
+    },
 ]
 
 const Layout = ({
