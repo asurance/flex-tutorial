@@ -14,7 +14,7 @@ const headNavs: NavVO[] = [
         text: 'Caniuse'
     },
     {
-        link: 'https://www.w3.org/TR/css-flexbox-1/#propdef-flex-flow',
+        link: 'https://www.w3.org/TR/css-flexbox-1/#flex-flow-property',
         text: 'Reference',
     },
 ]

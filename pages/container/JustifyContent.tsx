@@ -21,7 +21,7 @@ const headNavs: NavVO[] = [
         text: 'Codepen'
     },
     {
-        link: 'https://www.w3.org/TR/css-flexbox-1/#propdef-justify-content',
+        link: 'https://www.w3.org/TR/css-flexbox-1/#justify-content-property',
         text: 'Reference',
     },
 ]

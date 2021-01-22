@@ -20,7 +20,7 @@ const headNavs: NavVO[] = [
         text: 'Codepen'
     },
     {
-        link: 'https://www.w3.org/TR/css-flexbox-1/#propdef-flex-wrap',
+        link: 'https://www.w3.org/TR/css-flexbox-1/#flex-wrap-property',
         text: 'Reference',
     },
 ]
