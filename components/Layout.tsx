@@ -36,6 +36,10 @@ const containers: NavVO[] = [
         link: 'FlexFlow',
         text: 'flex-flow',
     },
+    {
+        link: 'Display',
+        text: 'display',
+    },
 ]
 
 const Layout = ({

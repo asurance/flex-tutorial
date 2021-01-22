@@ -37,3 +37,7 @@ export const MinWidth = <ArticleLink href="https://www.w3.org/TR/CSS21/visudet.h
 export const MaxHeight = <ArticleLink href="https://www.w3.org/TR/CSS21/visudet.html#propdef-max-height">max-height</ArticleLink>
 
 export const MaxWidth = <ArticleLink href="https://www.w3.org/TR/CSS21/visudet.html#propdef-max-width">max-width</ArticleLink>
+
+export const BlockLevel = <ArticleLink href="https://www.w3.org/TR/css-display-3/#block-level">块级(block-level)</ArticleLink>
+
+export const InlineLevel = <ArticleLink href="https://www.w3.org/TR/css-display-3/#inline-level">内联级(inline-level)</ArticleLink>
