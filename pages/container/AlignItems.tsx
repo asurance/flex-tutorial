@@ -10,7 +10,7 @@ import { NavVO } from '../../interfaces/NavVO'
 import PropertyP from '../../components/PropertyP'
 import ArticleLink from '../../components/ArticleLink'
 
-const JustifyContent = <ArticleLink href="/container/JustifyContent">justify-content</ArticleLink>
+const JustifyContent = <ArticleLink href="/container/JustifyContent" keep>justify-content</ArticleLink>
 
 const headNavs: NavVO[] = [
     {
