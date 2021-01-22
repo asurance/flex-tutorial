@@ -17,6 +17,10 @@ type Props = {
 
 const containers: NavVO[] = [
     {
+        link: 'Display',
+        text: 'display',
+    },
+    {
         link: 'FlexDirection',
         text: 'flex-direction',
     },
@@ -25,20 +29,16 @@ const containers: NavVO[] = [
         text: 'flex-wrap',
     },
     {
+        link: 'FlexFlow',
+        text: 'flex-flow',
+    },
+    {
         link: 'JustifyContent',
         text: 'justify-content',
     },
     {
         link: 'AlignItems',
         text: 'align-items',
-    },
-    {
-        link: 'FlexFlow',
-        text: 'flex-flow',
-    },
-    {
-        link: 'Display',
-        text: 'display',
     },
     {
         link: 'AlignContent',
