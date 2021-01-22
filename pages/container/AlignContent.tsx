@@ -10,11 +10,11 @@ import { NavVO } from '../../interfaces/NavVO'
 import PropertyP from '../../components/PropertyP'
 import ArticleLink from '../../components/ArticleLink'
 
-const JustifyContent = <ArticleLink href="/container/JustifyContent">justify-content</ArticleLink>
+const JustifyContent = <ArticleLink href="/container/JustifyContent" keep>justify-content</ArticleLink>
 
-const FlexStart = <ArticleLink href="/container/AlignContent#flex-start">flex-start</ArticleLink>
+const FlexStart = <ArticleLink href="/container/AlignContent#flex-start" keep>flex-start</ArticleLink>
 
-const Center = <ArticleLink href="/container/AlignContent#center">center</ArticleLink>
+const Center = <ArticleLink href="/container/AlignContent#center" keep>center</ArticleLink>
 
 const headNavs: NavVO[] = [
     {
