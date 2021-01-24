@@ -11,9 +11,9 @@ import PropertyP from '../../components/PropertyP'
 import ArticleLink from '../../components/ArticleLink'
 
 
-const Auto = <ArticleLink href="/container/FlexBasis#auto" keep>auto</ArticleLink>
+const Auto = <ArticleLink href="/item/FlexBasis#auto" keep>auto</ArticleLink>
 
-const Content = <ArticleLink href="/container/FlexBasis#content" keep>content</ArticleLink>
+const Content = <ArticleLink href="/item/FlexBasis#content" keep>content</ArticleLink>
 
 const headNavs: NavVO[] = [
     {
