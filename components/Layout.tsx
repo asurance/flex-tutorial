@@ -48,6 +48,10 @@ const containers: NavVO[] = [
 
 const items: NavVO[] = [
     {
+        link: 'FlexBasis',
+        text: 'flex-basis',
+    },
+    {
         link: 'AlignSelf',
         text: 'align-self',
     },
