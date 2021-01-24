@@ -43,7 +43,7 @@ export default function AlignSelf(): ReactElement {
             <PropertyP>该属性允许为单个{Item}设置以覆盖{Container}的{AlignItems}。(如果{Item}任一{CrossAxis}边距为&apos;auto&apos;,该属性会失效。)</PropertyP>
         </section>
         <PropertyValue value="auto" isDefault>
-            <PropertyP>对{CrossAxis}的控制延迟到父玄素的{AlignItems}上。</PropertyP>
+            <PropertyP>对{CrossAxis}的控制延迟到父元素的{AlignItems}上。</PropertyP>
             <section>
                 <FlexContainer className={ContainerClassNames}>
                     <FlexItem className={ItemClassNames}>1</FlexItem>
