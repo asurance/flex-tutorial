@@ -28,9 +28,9 @@ const ItemClassNames = [FlexStyles['item-wider']]
 
 const SampleItemClassNames = [...ItemClassNames, FlexStyles['item-sample']]
 
-export default function FlexBasis(): ReactElement {
-    return <Layout title="flex-basis" navs={headNavs}>
-        <header><h1>flex-basis</h1></header>
+export default function FlexShrink(): ReactElement {
+    return <Layout title="flex-shrink" navs={headNavs}>
+        <header><h1>flex-shrink</h1></header>
         <section>
             <PropertyP>该属性支持{Number},并设置了弹性收缩因子。它决定了当可分配空间为负时,{Item}会收缩多少。</PropertyP>
         </section>
