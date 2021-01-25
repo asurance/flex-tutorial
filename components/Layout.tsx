@@ -56,6 +56,10 @@ const items: NavVO[] = [
         text: 'flex-shrink',
     },
     {
+        link: 'FlexGrow',
+        text: 'flex-grow',
+    },
+    {
         link: 'AlignSelf',
         text: 'align-self',
     },
