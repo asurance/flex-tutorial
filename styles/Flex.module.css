@@ -41,6 +41,10 @@
     font-size: 60px;
 }
 
+.item-wider {
+    width: 200px;
+}
+
 .item-sample {
     background-color: red;
 }

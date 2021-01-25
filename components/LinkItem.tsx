@@ -49,3 +49,5 @@ export const Width = <ArticleLink href="https://www.w3.org/TR/CSS21/visudet.html
 export const Height = <ArticleLink href="https://www.w3.org/TR/CSS21/visudet.html#propdef-height">height</ArticleLink>
 
 export const MainSize = '主大小(main size)'
+
+export const Number = <ArticleLink href="https://www.w3.org/TR/css3-values/#number-value">number</ArticleLink>
