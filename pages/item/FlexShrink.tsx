@@ -32,7 +32,7 @@ export default function FlexShrink(): ReactElement {
     return <Layout title="flex-shrink" navs={headNavs}>
         <header><h1>flex-shrink</h1></header>
         <section>
-            <PropertyP>该属性支持{Number},并设置了弹性收缩因子。它决定了当可分配空间为负时,{Item}会收缩多少。</PropertyP>
+            <PropertyP>该属性支持{Number}(负数是非法的),并设置了弹性收缩因子。它决定了当可分配空间为负时,{Item}会收缩多少。</PropertyP>
         </section>
         <PropertyValue value="1" isDefault>
             <section>
