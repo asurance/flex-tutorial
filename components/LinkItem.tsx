@@ -14,17 +14,17 @@ export const BlockStart = <ArticleLink href="https://www.w3.org/TR/css-writing-m
 
 export const BlockEnd = <ArticleLink href="https://www.w3.org/TR/css-writing-modes-4/#block-end">块结束(block end)</ArticleLink>
 
-export const MainAxis = '主轴(main axis)'
+export const MainAxis = <ArticleLink href="/#show" keep>主轴(main axis)</ArticleLink>
 
-export const MainStart = '主开始(main start)'
+export const MainStart = <ArticleLink href="/#show" keep>主开始(main start)</ArticleLink>
 
-export const MainEnd = '主结束(main end)'
+export const MainEnd = <ArticleLink href="/#show" keep>主结束(main end)</ArticleLink>
 
-export const CrossAxis = '交叉轴(cross axis)'
+export const CrossAxis = <ArticleLink href="/#show" keep>交叉轴(cross axis)</ArticleLink>
 
-export const CrossStart = '交叉开始(cross start)'
+export const CrossStart = <ArticleLink href="/#show" keep>交叉开始(cross start)</ArticleLink>
 
-export const CrossEnd = '交叉结束(cross end)'
+export const CrossEnd = <ArticleLink href="/#show" keep>交叉结束(cross end)</ArticleLink>
 
 export const Container = <ArticleLink href="/container" keep>flex容器(flex container)</ArticleLink>
 
@@ -48,6 +48,6 @@ export const Width = <ArticleLink href="https://www.w3.org/TR/CSS21/visudet.html
 
 export const Height = <ArticleLink href="https://www.w3.org/TR/CSS21/visudet.html#propdef-height">height</ArticleLink>
 
-export const MainSize = '主大小(main size)'
+export const MainSize = <ArticleLink href="/#show" keep>主大小(main size)</ArticleLink>
 
 export const Number = <ArticleLink href="https://www.w3.org/TR/css3-values/#number-value">number</ArticleLink>
