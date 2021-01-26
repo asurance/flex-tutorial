@@ -1,14 +1,25 @@
 import ArticleLink from '../components/ArticleLink'
 import Layout from '../components/Layout'
-import { Container, Item } from '../components/LinkItem'
+import { Container, CrossAxis, Item, MainAxis } from '../components/LinkItem'
 import PropertyP from '../components/PropertyP'
+import Image from 'next/image'
 
 const Display = <ArticleLink href="/container/Display" keep>display</ArticleLink>
+
+const FlexFlow = <ArticleLink href="/container/FlexFlow" keep>flex-flow</ArticleLink>
+const FlexDirection = <ArticleLink href="/container/FlexDirection" keep>flex-direction</ArticleLink>
+const FlexWrap = <ArticleLink href="/container/FlexWrap" keep>flex-wrap</ArticleLink>
+const Order = <ArticleLink href="/item/Order" keep>order</ArticleLink>
 
 const Flex = <ArticleLink href="/item/Flex" keep>flex</ArticleLink>
 const FlexGrow = <ArticleLink href="/item/FlexGrow" keep>flex-grow</ArticleLink>
 const FlexShrink = <ArticleLink href="/item/FlexShrink" keep>flex-shrink</ArticleLink>
 const FlexBasis = <ArticleLink href="/item/FlexBasis" keep>flex-basis</ArticleLink>
+
+const JustifyContent = <ArticleLink href="/container/JustifyContent" keep>justify-content</ArticleLink>
+const AlignItems = <ArticleLink href="/container/AlignItems" keep>align-items</ArticleLink>
+const AlignSelf = <ArticleLink href="/item/AlignSelf" keep>align-self</ArticleLink>
+const AlignContent = <ArticleLink href="/container/AlignContent" keep>align-content</ArticleLink>
 
 const Home = (): JSX.Element => {
     return <Layout >
@@ -23,7 +34,12 @@ const Home = (): JSX.Element => {
         </section>
         <section>
             <header><h1>基本知识</h1></header>
-            <PropertyP>...</PropertyP>
+            <PropertyP>
+                <figure style={{ textAlign: 'center' }} id="show">
+                    <Image src="/assets/show.svg" width={665} height={277} />
+                </figure>
+                <p>可以通过{FlexDirection}和{FlexWrap}来控制{MainAxis}和{CrossAxis},或是直接用缩写形式{FlexFlow}。对于某个{Item},可以通过{Order}来更改其在流中顺序。</p>
+            </PropertyP>
         </section>
         <section>
             <header><h1>弹性</h1></header>
@@ -31,7 +47,7 @@ const Home = (): JSX.Element => {
         </section>
         <section>
             <header><h1>布局</h1></header>
-            <PropertyP>...</PropertyP>
+            <PropertyP>对{Container}中剩余的额外空间,可以通过{JustifyContent}和{AlignItems}进行分配。可以通过{AlignSelf}来控制单个{Item}在交叉方向上的空间分配。使用{AlignContent}对多行{Container}中不同行进行控制。</PropertyP>
         </section>
         <section>
             <header><h1>布局算法</h1></header>
