@@ -49,10 +49,6 @@ const Home = (): JSX.Element => {
             <header><h1>布局</h1></header>
             <PropertyP>对{Container}中剩余的额外空间,可以通过{JustifyContent}和{AlignItems}进行分配。可以通过{AlignSelf}来控制单个{Item}在交叉方向上的空间分配。使用{AlignContent}对多行{Container}中不同行进行控制。</PropertyP>
         </section>
-        <section>
-            <header><h1>布局算法</h1></header>
-            <PropertyP>...</PropertyP>
-        </section>
     </Layout>
 }
 
